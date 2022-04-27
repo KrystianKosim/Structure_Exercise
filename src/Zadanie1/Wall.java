@@ -14,16 +14,12 @@ public class Wall implements Structure {
 
     @Override
     public Optional findBlockByColor(String color) {
-        return blocks.stream()
-                .filter(s -> s.getColor().equals(color))
-                .findAny();
+        return blocks.stream().filter(s -> s.getColor().equals(color)).findAny();
     }
 
     @Override
     public List<Block> findBlocksByMaterial(String material) {
-        return blocks.stream()
-                .filter(s -> s.getMaterial().equals(material))
-                .collect(Collectors.toList());
+        return blocks.stream().filter(s -> s.getMaterial().equals(material)).collect(Collectors.toList());
     }
 
     @Override
