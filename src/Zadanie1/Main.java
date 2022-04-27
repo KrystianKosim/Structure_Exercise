@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Wall wall = new Wall();
 
-        Block block = new Block() {
+        Block block1 = new Block() {
             @Override
             public String getColor() {
                 return "czerwony";
@@ -16,11 +16,11 @@ public class Main {
 
             @Override
             public String getMaterial() {
-                return "drewno";
+                return "metal";
             }
         };
 
-        Block block1 = new Block() {
+        Block block2 = new Block() {
             @Override
             public String getColor() {
                 return "czarny";
@@ -36,8 +36,8 @@ public class Main {
             @Override
             public List<Block> getBlocks() {
                 List<Block> list = new ArrayList<>();
-                list.add(block);
                 list.add(block1);
+                list.add(block2);
                 return list;
             }
 
@@ -52,8 +52,8 @@ public class Main {
             }
         };
 
-        wall.blocks.add(block);
         wall.blocks.add(block1);
+        wall.blocks.add(block2);
         wall.blocks.add(compositeBlock);
         System.out.println(wall.findBlockByColor("czerwony"));
         List<Block> list = wall.findBlocksByMaterial("drewno");
