@@ -30,7 +30,7 @@ public class Wall implements Structure {
     private int count(List<Block> blockList) {
         int count = 0;
         for (Block block : blockList) {
-            if (block.getClass() == CompositeBlockClass.class) {
+            if (block instanceof CompositeBlockClass) {
                 CompositeBlockClass compositeBlock = (CompositeBlockClass) block;
                 count += count(compositeBlock.getBlocks());
             } else {
