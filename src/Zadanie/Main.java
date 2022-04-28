@@ -27,7 +27,7 @@ public class Main {
 
         compositeBlock3.addBlock(block1);
         compositeBlock3.addBlock(block3);
-        compositeBlock3.addBlock(compositeBlock1);
+        compositeBlock3.addBlock(compositeBlock2);
 
         wall.addBlock(compositeBlock1);
         wall.addBlock(compositeBlock2);
