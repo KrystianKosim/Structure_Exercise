@@ -44,6 +44,6 @@ public class Main {
         /**
          * Metoda count
          */
-        wall.count();
+        System.out.println(wall.count());
     }
 }
