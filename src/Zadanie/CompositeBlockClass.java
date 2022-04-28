@@ -1,6 +1,7 @@
 package Zadanie;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class CompositeBlockClass implements CompositeBlock {
@@ -12,7 +13,7 @@ public class CompositeBlockClass implements CompositeBlock {
     public CompositeBlockClass(String color, String material) {
         this.color = color;
         this.material = material;
-        blockList = new ArrayList<>();
+        blockList = new LinkedList<>();
     }
 
     void addBlock(Block block) {

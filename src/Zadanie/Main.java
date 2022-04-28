@@ -9,10 +9,10 @@ public class Main {
         BlockClass block3 = new BlockClass("czerwony", "metal");
         BlockClass block4 = new BlockClass("czarny", "betno");
 
-        wall.getBlocks().add(block1);
-        wall.getBlocks().add(block2);
-        wall.getBlocks().add(block3);
-        wall.getBlocks().add(block4);
+        wall.addBlock(block1);
+        wall.addBlock(block2);
+        wall.addBlock(block3);
+        wall.addBlock(block4);
 
         CompositeBlockClass compositeBlock1 = new CompositeBlockClass("czarny", "drewno");
         CompositeBlockClass compositeBlock2 = new CompositeBlockClass("czerwony", "beton");
@@ -29,18 +29,18 @@ public class Main {
         compositeBlock3.addBlock(block3);
         compositeBlock3.addBlock(compositeBlock1);
 
-        wall.getBlocks().add(compositeBlock1);
-        wall.getBlocks().add(compositeBlock2);
-        wall.getBlocks().add(compositeBlock3);
+        wall.addBlock(compositeBlock1);
+        wall.addBlock(compositeBlock2);
+        wall.addBlock(compositeBlock3);
 
         /**
          * Metoda findBlocksByColor
          */
-        wall.findBlockByColor("czerwony");
+        System.out.println(wall.findBlockByColor("czarny"));;
         /**
          * Metoda findBlocksByMaterial
          */
-        wall.findBlocksByMaterial("drewno");
+        System.out.println(wall.findBlocksByMaterial("betno"));
         /**
          * Metoda count
          */
