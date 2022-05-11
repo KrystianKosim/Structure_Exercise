@@ -46,21 +46,6 @@ public class Main {
 
         wall.addBlock(compositeBlock3);
 
-//        compositeBlock1.addBlock(block1);
-//        compositeBlock1.addBlock(block2);
-//
-//        compositeBlock2.addBlock(block1);
-//        compositeBlock2.addBlock(block2);
-//        compositeBlock2.addBlock(compositeBlock1);
-//
-//        compositeBlock3.addBlock(block1);
-//        compositeBlock3.addBlock(block3);
-//        compositeBlock3.addBlock(compositeBlock2);
-//
-//        wall.addBlock(compositeBlock1);
-//        wall.addBlock(compositeBlock2);
-//        wall.addBlock(compositeBlock3);
-
         /**
          * Metoda findBlocksByColor
          */
