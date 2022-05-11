@@ -52,7 +52,7 @@ public class Wall implements Structure {
 
     @Override
     public int count() {
-        return count(blocks);
+        return count(getBlocks());
     }
 
     private int count(List<Block> blockList) {

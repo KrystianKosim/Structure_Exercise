@@ -9,6 +9,15 @@ public class Main {
         BlockClass block3 = new BlockClass("czerwony", "metal");
         BlockClass block4 = new BlockClass("czarny", "betno");
 
+        BlockClass block5 = new BlockClass("czarny", "betno");
+        BlockClass block6 = new BlockClass("czarny", "betno");
+        BlockClass block7 = new BlockClass("czarny", "betno");
+        BlockClass block8 = new BlockClass("czarny", "betno");
+        BlockClass block9 = new BlockClass("czarny", "betno");
+        BlockClass block10 = new BlockClass("czarny", "betno");
+        BlockClass block11 = new BlockClass("czarny", "betno");
+        BlockClass block12 = new BlockClass("czarny", "betno");
+
         wall.addBlock(block1);
         wall.addBlock(block2);
         wall.addBlock(block3);
@@ -17,21 +26,40 @@ public class Main {
         CompositeBlockClass compositeBlock1 = new CompositeBlockClass("czarny", "drewno");
         CompositeBlockClass compositeBlock2 = new CompositeBlockClass("czerwony", "beton");
         CompositeBlockClass compositeBlock3 = new CompositeBlockClass("zielony", "metal");
+        CompositeBlockClass compositeBlock4 = new CompositeBlockClass("zielony", "metal");
 
-        compositeBlock1.addBlock(block1);
-        compositeBlock1.addBlock(block2);
+        compositeBlock4.addBlock(block10);
+        compositeBlock4.addBlock(block11);
+        compositeBlock4.addBlock(block12);
 
-        compositeBlock2.addBlock(block1);
-        compositeBlock2.addBlock(block2);
-        compositeBlock2.addBlock(compositeBlock1);
 
-        compositeBlock3.addBlock(block1);
-        compositeBlock3.addBlock(block3);
+        compositeBlock1.addBlock(block5);
+        compositeBlock1.addBlock(block6);
+        compositeBlock1.addBlock(compositeBlock4);
+
+        compositeBlock2.addBlock(block7);
+        compositeBlock2.addBlock(block8);
+
+        compositeBlock3.addBlock(compositeBlock1);
         compositeBlock3.addBlock(compositeBlock2);
+        compositeBlock3.addBlock(block9);
 
-        wall.addBlock(compositeBlock1);
-        wall.addBlock(compositeBlock2);
         wall.addBlock(compositeBlock3);
+
+//        compositeBlock1.addBlock(block1);
+//        compositeBlock1.addBlock(block2);
+//
+//        compositeBlock2.addBlock(block1);
+//        compositeBlock2.addBlock(block2);
+//        compositeBlock2.addBlock(compositeBlock1);
+//
+//        compositeBlock3.addBlock(block1);
+//        compositeBlock3.addBlock(block3);
+//        compositeBlock3.addBlock(compositeBlock2);
+//
+//        wall.addBlock(compositeBlock1);
+//        wall.addBlock(compositeBlock2);
+//        wall.addBlock(compositeBlock3);
 
         /**
          * Metoda findBlocksByColor
