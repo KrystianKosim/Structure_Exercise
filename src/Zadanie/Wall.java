@@ -8,10 +8,9 @@ public class Wall implements Structure {
     private List<Block> blocks = new LinkedList<>();
 
 
-
     @Override
     public Optional<Block> findBlockByColor(String color) {
-        List<Block> list = findBlockByColor(blocks,color);
+        List<Block> list = findBlockByColor(blocks, color);
         return list.stream().findAny();
     }
 
@@ -32,7 +31,7 @@ public class Wall implements Structure {
 
     @Override
     public List<Block> findBlocksByMaterial(String material) {
-        return findBlocksByMaterial(blocks,material);
+        return findBlocksByMaterial(blocks, material);
     }
 
     private List<Block> findBlocksByMaterial(List<Block> list, String material) {
