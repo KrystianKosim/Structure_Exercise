@@ -7,16 +7,16 @@ public class Main {
         BlockClass block1 = new BlockClass("czerwony", "drewno");
         BlockClass block2 = new BlockClass("zielony", "beton");
         BlockClass block3 = new BlockClass("czerwony", "metal");
-        BlockClass block4 = new BlockClass("czarny", "betno");
+        BlockClass block4 = new BlockClass("czarny", "beton");
 
-        BlockClass block5 = new BlockClass("czarny", "betno");
-        BlockClass block6 = new BlockClass("czarny", "betno");
-        BlockClass block7 = new BlockClass("czarny", "betno");
-        BlockClass block8 = new BlockClass("czarny", "betno");
-        BlockClass block9 = new BlockClass("czarny", "betno");
-        BlockClass block10 = new BlockClass("czarny", "betno");
-        BlockClass block11 = new BlockClass("czarny", "betno");
-        BlockClass block12 = new BlockClass("czarny", "betno");
+        BlockClass block5 = new BlockClass("czarny", "beton");
+        BlockClass block6 = new BlockClass("czarny", "beton");
+        BlockClass block7 = new BlockClass("czarny", "beton");
+        BlockClass block8 = new BlockClass("czarny", "beton");
+        BlockClass block9 = new BlockClass("czarny", "beton");
+        BlockClass block10 = new BlockClass("czarny", "beton");
+        BlockClass block11 = new BlockClass("czarny", "beton");
+        BlockClass block12 = new BlockClass("czarny", "beton");
 
         wall.addBlock(block1);
         wall.addBlock(block2);
@@ -53,7 +53,7 @@ public class Main {
         /**
          * Metoda findBlocksByMaterial
          */
-        System.out.println(wall.findBlocksByMaterial("betno"));
+        System.out.println(wall.findBlocksByMaterial("beton"));
         /**
          * Metoda count
          */
